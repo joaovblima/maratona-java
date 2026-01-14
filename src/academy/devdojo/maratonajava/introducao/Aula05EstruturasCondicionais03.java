@@ -18,6 +18,9 @@ public class Aula05EstruturasCondicionais03 {
             case 7:
                 System.out.println("fim de semana");
                 break;
+            default:
+                System.out.println("opcao inválida. ");
+                break;
         }
     }
 }
