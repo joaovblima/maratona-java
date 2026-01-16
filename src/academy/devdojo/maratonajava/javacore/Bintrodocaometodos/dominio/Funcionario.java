@@ -27,7 +27,7 @@ public class Funcionario {
                 soma += salario;
             }
             double media = soma / salarios.length;
-            System.out.printf("Media salarial do guerreirinho é de R$ %.2f", media);
+            System.out.printf("Media salarial do guerreirinho(a) é de R$ %.2f\n", media);
         } else {
             return;
         }
