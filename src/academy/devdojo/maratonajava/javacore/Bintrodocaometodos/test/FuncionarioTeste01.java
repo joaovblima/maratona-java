@@ -12,6 +12,7 @@ public class FuncionarioTeste01 {
         funcionario.salarios = arraySalarios;
 
         funcionario.imprimeDados();
+        funcionario.mediaSalarial();
 
     }
 }
