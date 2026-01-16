@@ -13,4 +13,12 @@ public class Calculadora {
     public double divideDoisNumeros(double num, double num2) {
         return num /num2;
     }
+
+    public void alteraDoisNumeros(int num1, int num2) {
+        System.out.println("Dentro do método altera dois numeros: ");
+        num1 = 1;
+        num2 = 2;
+        System.out.println(num1);
+        System.out.println(num2);
+    }
 }
