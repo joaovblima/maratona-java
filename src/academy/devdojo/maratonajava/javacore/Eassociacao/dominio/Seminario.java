@@ -28,7 +28,7 @@ public class Seminario {
         System.out.println(this.local.getEndereco());
         if (alunos == null) return;
         for (Aluno aluno : alunos) {
-            System.out.println(aluno);
+            System.out.println(aluno.getNome());
         }
 
     }

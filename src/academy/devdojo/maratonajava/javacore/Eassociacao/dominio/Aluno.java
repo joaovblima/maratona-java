@@ -29,6 +29,8 @@ public class Aluno {
     public void imprime() {
         System.out.println(this.nome);
         System.out.println(this.idade);
+        if (seminario == null)return;
+        System.out.println(seminario.getTitulo());
     }
 
     public Seminario getSeminario() {

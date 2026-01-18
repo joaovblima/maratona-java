@@ -22,6 +22,12 @@ public class AssociacaoTeste01 {
         seminario.setAlunos(alunos);
 
         seminario.imprime();
+        System.out.println("--------");
+        aluno1.imprime();
+        System.out.println("---------");
+        aluno2.imprime();
+        System.out.println("---------");
+        professor1.imprime();
 
     }
 }
