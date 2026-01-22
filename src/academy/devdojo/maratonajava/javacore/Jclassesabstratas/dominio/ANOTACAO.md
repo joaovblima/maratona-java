@@ -6,3 +6,6 @@ Quando extendemos classes a partir de uma classe abstrata devemos nos lembrar de
 nosso método toString(). 
 
 Os atributos da classe vão como protected. 
+
+Podemos ter também métodos abstratos, eles são criados na classe Pai e não podem ter corpo, ele obrigatoriamente deve
+ser sobrescrito nas classes filhas. 
