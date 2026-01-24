@@ -8,7 +8,7 @@ public class ProdutoTeste01 {
 
         Computador computador = new Computador("DELL XPS", 13000);
 
-        CalculadoraImposto.calcularImpostoComputador(computador);
+        CalculadoraImposto.calcularImposto(computador);
 
     }
 }
