@@ -5,7 +5,7 @@ Crie um sistema que simule diferentes formas de pagamento.
 ##### Requisitos:
 
  - Crie um enum TipoPagamento com valores: CREDITO, DEBITO, PIX, BOLETO
- -   Crie uma interface Pagavel com o método processar(double valor)
+- Crie uma interface Pagavel com o método processar(double valor)
 - Implemente classes concretas para cada tipo de pagamento:
 
         - PagamentoCredito: aplica taxa de 2.5%
