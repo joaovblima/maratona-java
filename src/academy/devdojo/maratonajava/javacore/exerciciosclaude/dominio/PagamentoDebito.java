@@ -8,8 +8,4 @@ public class PagamentoDebito implements Pagavel {
         return 0;
     }
 
-    @Override
-    public void processarRelatorio() {
-
-    }
 }

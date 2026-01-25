@@ -5,11 +5,12 @@ public class PagamentoCredito implements Pagavel{
 
     @Override
     public double processar(double valor) {
-        return 0;
+
+        double aplicarTaxa = valor * TAXA;
+        return  valor + aplicarTaxa;
     }
 
-    @Override
-    public void processarRelatorio() {
 
-    }
+
+
 }

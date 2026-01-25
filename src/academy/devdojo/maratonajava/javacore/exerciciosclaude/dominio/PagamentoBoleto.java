@@ -5,6 +5,9 @@ public class PagamentoBoleto  implements Pagavel{
 
     @Override
     public double processar(double valor) {
-        return 0;
+        double aplicarTaxa = valor + TAXA;
+        return  aplicarTaxa;
     }
+
+
 }

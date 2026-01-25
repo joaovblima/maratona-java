@@ -2,11 +2,11 @@ package academy.devdojo.maratonajava.javacore.exerciciosclaude.dominio;
 
 public class Pedido {
     private double valor;
-    TipoPagamento tipoPagamento;
+    private Pagavel formaPagamento;
 
-    public Pedido(double valor, TipoPagamento tipoPagamento) {
+    public Pedido(double valor, Pagavel formaPagamento) {
         this.valor = valor;
-        this.tipoPagamento = tipoPagamento;
+        this.formaPagamento = formaPagamento;
     }
 
     public double getValor() {
@@ -17,19 +17,27 @@ public class Pedido {
         this.valor = valor;
     }
 
-    public TipoPagamento getTipoPagamento() {
-        return tipoPagamento;
+    public Pagavel getFormaPagamento() {
+        return formaPagamento;
     }
 
-    public void setTipoPagamento(TipoPagamento tipoPagamento) {
-        this.tipoPagamento = tipoPagamento;
+    public void setFormaPagamento(Pagavel formaPagamento) {
+        this.formaPagamento = formaPagamento;
     }
 
     @Override
     public String toString() {
         return "Pedido{" +
                 "valor=" + valor +
-                ", tipoPagamento=" + tipoPagamento +
+                ", formaPagamento=" + formaPagamento +
                 '}';
+    }
+
+    public void processarPedido() {
+        double valorComTaxa = formaPagamento.processar(this.valor);
+        System.out.println("Relatório do pedido: ");
+        System.out.println("Valor do pedido: R$ "+this.valor);
+        System.out.println("Valor da taxa: "+formaPagamento);
+        System.out.println("Valor com a taxa: R$"+ valorComTaxa);
     }
 }
