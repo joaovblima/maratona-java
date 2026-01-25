@@ -4,9 +4,16 @@ public class Pedido {
     private double valor;
     private Pagavel formaPagamento;
 
+
     public Pedido(double valor, Pagavel formaPagamento) {
         this.valor = valor;
         this.formaPagamento = formaPagamento;
+    }
+
+    public void processarPedido() {
+        double valorComTaxa = formaPagamento.processar(this.valor);
+        System.out.println("Valor do pedido: R$ "+this.valor);
+        System.out.println("Valor com a taxa: R$"+ valorComTaxa);
     }
 
     public double getValor() {
@@ -33,11 +40,5 @@ public class Pedido {
                 '}';
     }
 
-    public void processarPedido() {
-        double valorComTaxa = formaPagamento.processar(this.valor);
-        System.out.println("Relatório do pedido: ");
-        System.out.println("Valor do pedido: R$ "+this.valor);
-        System.out.println("Valor da taxa: "+formaPagamento);
-        System.out.println("Valor com a taxa: R$"+ valorComTaxa);
-    }
+
 }
