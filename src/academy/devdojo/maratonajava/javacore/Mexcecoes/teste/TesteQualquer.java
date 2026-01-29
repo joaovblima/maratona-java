@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.mexcecoes.teste;
+package academy.devdojo.maratonajava.javacore.Mexcecoes.teste;
 
 public class TesteQualquer {
     public static void main(String[] args) {
