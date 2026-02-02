@@ -11,6 +11,8 @@ public class StringPerformanceTeste {
         concatStringBuilder(1000);
         termino = System.currentTimeMillis();
         System.out.println("tempo gasto para stringBuilder  = "+ (termino-inicio)+ " ms");
+        String mensagem = "Essa é uma simples mensagem teste";
+        sendMessage(mensagem);
 
     }
 
@@ -28,5 +30,9 @@ public class StringPerformanceTeste {
         for (int i = 0; i <tamanho ; i++) {
             sb.append(i);
         }
+    }
+
+    private static void sendMessage(String message) {
+        System.out.println("Mensagem enviada pelo usuario: "+ message);
     }
 }
